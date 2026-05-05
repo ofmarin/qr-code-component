@@ -7,6 +7,10 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
+
 export class App {
+
+  qrCode = "/image-qr-code.png";
+  codeAlt:string = "QR CODE";
   protected readonly title = signal('qr-code-component');
 }
