@@ -1,16 +1,86 @@
 
-main{
+/* <weight>: Use a value from 100 to 900 */
+/* <uniquifier>: Use a unique and descriptive class name */
 
+@font-face {
+  font-family: 'Outfit';
+  src: url("/fonts/Outfit-Bold.ttf") format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url("/fonts/Outfit-Regular.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+main{
+  width: 300px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5%;
+  margin: 1em;
+}
+
+.compo{
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 33%;
-  border: 1px solid black;
+  padding: 1em;
 }
 
 img{
+
+  border-radius: 5%;
+}
+
+.text{
   max-width: 100%;
-  height:auto;
-  display: block;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow:1;
+
+}
+
+.primary,
+.secondary{
+  flex-grow: 1;
+  width: 100%;
+  margin:0;
+  text-align: center;
+  box-sizing:border-box;
+
+}
+
+.primary{
+  font-family: 'Outfit';
+  font-weight: 700;
+  color: hsl(218, 44%, 22%);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0 0.75em;
+}
+
+.secondary{
+  font-family: 'Outfit';
+  font-weight: 400;
+  color: hsl(212, 45%, 89%);
+  margin-bottom: 1.5em;
+  padding: 0 0.75em;
+  font-size: 15px;
+}
+
+.attribution{
+  margin-top: 1em ;
+}
+
+.compo img,
+.compo div{
+  flex-grow: 1;
+  width: 100%;
+  margin: 0;
 }
